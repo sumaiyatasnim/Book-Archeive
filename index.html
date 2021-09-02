@@ -11,19 +11,32 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
-<body>
-    <section class="container w-50">
-        <!-- input field -->
-        <div class="d-flex">
-            <input type="text" class="form-control me-1 mx-5 mt-4 w-50" placeholder="Search here" id="search-input">
-            <button onclick="clickButton()" class="btn btn-dark me-5 mt-4" id="search-btn">Search</button>
-        </div>
-    </section>
-    <!-- display info -->
+<body style="background-color: aliceblue ;">
+    <h3 class="text-center mt-4">A home for your books.</h3>
 
-    <div class="row " id="book-container">
-
+    <!-- input field -->
+    <div class="d-flex mx-auto justify-content-center">
+        <input type="text" class="form-control me-1 mx-5 mt-4 w-50" placeholder="Search here" id="search-input">
+        <button onclick="clickButton()" class="btn btn-dark me-5 mt-4" id="search-btn">Search</button>
     </div>
+
+    <!-- total search -->
+    <div>
+        <h5 class="text-center w-25 mx-auto my-4" id='book-count'></h5>
+    </div>
+
+    <!-- display info -->
+    <div class="row mx-5" id="book-container">
+    </div>
+    <!-- error handling -->
+    <div>
+        <p id="empty-error" class=" text-center text-danger">Please search a book name.</p>
+    </div>
+    <div>
+        <p class=" text-center text-danger " id="undefined-error">Result Not Found</p>
+    </div>
+
+
 
 
     <!-- JS link -->
