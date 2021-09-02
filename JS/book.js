@@ -46,7 +46,7 @@ const displayBookResult = data => {
         const div = document.createElement("div");
         div.classList.add("col-md-4");
         div.innerHTML = `
-    <div class="card overflow-hidden border p-2 mb-3 >
+    <div class="card overflow-hidden border p-2 mb-3">
         <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg " class="card-img-top " " style="height: 500px; alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">${book.title}</h5>
