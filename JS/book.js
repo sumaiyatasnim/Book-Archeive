@@ -34,7 +34,7 @@ const displayBookResult = data => {
         emptyError.innerText = '';
 
     }
-    bookCount.innerText = `Total books number:${numFoundResult}`;
+    bookCount.innerText = `Total books number: ${numFoundResult}`;
     // clear data
     searchInput.value = '';
 
@@ -46,14 +46,14 @@ const displayBookResult = data => {
         const div = document.createElement("div");
         div.classList.add("col-md-4");
         div.innerHTML = `
-    <div class="card overflow-hidden border p-2 mb-3">
+    <div class="card overflow-hidden border border-secondary p-2 mb-3">
         <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg " class="card-img-top " " style="height: 500px; alt="...">
         <div class="card-body">
-            <h5 class="card-title text-center">${book.title}</h5>
-            <h6 class="card-title">Author:${book.author_name}</h6>
-            <h6 class="card-title">Publisher:${book.publisher}</h6>
-            <h6 class="card-title">Publish Year:${book.publish_year}</h6>
-            <h6 class="card-title">1st Publication:${book.first_publish_year}</h6>
+            <h5 class="card-title text-center">Name: <span class="text-primary">${book.title}</span></h5>
+            <h6 class="card-title">Author: <span class="text-secondary">${book.author_name}</span></h6>
+            <h6 class="card-title">Publisher: <span class="text-success">${book.publisher}</span></h6>
+            <h6 class="card-title">Publish Year: <span class="text-info">${book.publish_year}</span></h6>
+            <h6 class="card-title">1st Publication: <span class="text-success">${book.first_publish_year}</span></h6>
          </div>
     </div>
             `;
